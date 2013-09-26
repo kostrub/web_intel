@@ -1,4 +1,4 @@
-web_intel
+Simple map-reduce application
 =========
 
 Programming assignments for course Web Intelligence and Big Data
