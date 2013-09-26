@@ -22,7 +22,7 @@ def filt(line):
 pwd = os.path.dirname(__file__)
 
 try:
-	files=glob.glob(pwd+"\hw3data\*")
+	files=glob.glob(pwd+"./hw3data/*")
 except Exception, e:
 	print e
 if len(files)==0:
