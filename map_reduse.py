@@ -1,13 +1,17 @@
-import mincemeat
+##!/usr/bin/env python
 import sys
 import glob
 import os
 from stopwords import allStopWords
 
-pwd = os.path.dirname(__file__)
+pwd = os.path.dirname(os.path.abspath(__file__)
+sys.path.append(pwd+"/mincemeat/")
+import mincemeat
+
+
 
 try:
-	files=glob.glob(pwd+"./hw3data/*")
+	files=glob.glob(pwd+"/hw3data/*")
 except Exception, e:
 	print e
 if len(files)==0:
